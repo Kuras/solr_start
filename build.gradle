@@ -1,0 +1,13 @@
+group 'solr'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+    compile group: 'org.apache.solr', name: 'solr-solrj', version: '6.0.1'
+}
