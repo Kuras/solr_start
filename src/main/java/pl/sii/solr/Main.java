@@ -26,7 +26,7 @@ public class Main {
         HttpSolrClient server = SiiSolrServer.getSolrClient();
 
         SolrInputDocument doc1 = new SolrInputDocument();
-        doc1.addField( "id", "id1", 1.0f );
+//        doc1.addField( "id", "id1", 1.0f );
         doc1.addField( "name", "doc1", 1.0f );
         doc1.addField( "price", 10 );
 
