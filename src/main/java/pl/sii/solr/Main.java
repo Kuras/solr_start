@@ -23,7 +23,7 @@ public class Main {
 
     public static void main( String[] args ) throws IOException, SolrServerException {
         System.out.println("Solr");
-        HttpSolrClient server = SiiSolrServer.getSolrClient();
+        HttpSolrClient server = SiiSolrServer.getSolrClient("demo");
 
         SolrInputDocument doc1 = new SolrInputDocument();
 //        doc1.addField( "id", "id1", 1.0f );
