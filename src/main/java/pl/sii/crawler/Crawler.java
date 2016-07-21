@@ -1,21 +1,16 @@
 package pl.sii.crawler;
 
-import com.sun.javafx.collections.VetoableListDecorator;
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.MalformedURLException;
 import java.net.URL;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Optional;
 import java.util.stream.Stream;
 
 public class Crawler {
 
     private static boolean show = false;
-    private static List<Page> list = new ArrayList<>();
 
     static int addPage( Integer page ) {
         Optional<Stream<String>> op = getStreamOfLinesForPage( page );
@@ -33,7 +28,7 @@ public class Crawler {
                 }
             } );
         }
-        list.add( new Page( page, sb.toString() ) );
+        System.out.println(sb.toString());
         return 0;
     }
 
@@ -75,7 +70,4 @@ public class Crawler {
         return show;
     }
 
-    public static Stream<Page> getStreamOfPages() {
-        return list.stream();
-    }
 }

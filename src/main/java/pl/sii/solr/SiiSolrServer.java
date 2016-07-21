@@ -4,10 +4,6 @@ import org.apache.solr.client.solrj.impl.HttpSolrClient;
 
 import java.util.Objects;
 
-/**
- * Created by pkura on 2016-07-12.
- */
-
 public class SiiSolrServer {
     private static HttpSolrClient solrClientWsi;
     private static HttpSolrClient solrClientDemo;

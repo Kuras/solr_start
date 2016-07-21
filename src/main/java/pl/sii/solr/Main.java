@@ -1,6 +1,5 @@
 package pl.sii.solr;
 
-import org.apache.solr.client.solrj.SolrClient;
 import org.apache.solr.client.solrj.SolrQuery;
 import org.apache.solr.client.solrj.SolrServerException;
 import org.apache.solr.client.solrj.impl.HttpSolrClient;
@@ -12,13 +11,7 @@ import org.apache.solr.common.SolrInputDocument;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collection;
-import java.util.function.Function;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
-/**
- * Created by pkura on 2016-07-11.
- */
 public class Main {
 
     public static void main( String[] args ) throws IOException, SolrServerException {
