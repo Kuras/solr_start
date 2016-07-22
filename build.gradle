@@ -15,6 +15,4 @@ dependencies {
     // https://mvnrepository.com/artifact/org.apache.solr/solr-core
 //    compile group: 'org.apache.solr', name: 'solr-core', version: '6.1.0'
 
-
-
 }
