@@ -10,6 +10,9 @@ repositories {
 dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.11'
     compile group: 'org.apache.solr', name: 'solr-solrj', version: '6.0.1'
+    // https://mvnrepository.com/artifact/io.reactivex/rxjava
+    compile group: 'io.reactivex', name: 'rxjava', version: '1.1.7'
+
 
 
 }
